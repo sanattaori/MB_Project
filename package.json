@@ -1,0 +1,20 @@
+{
+  "name": "moneybalancer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.3",
+    "cookie-parser": "^1.4.3",
+    "body-parser": "^1.17.2",
+    "morgan": "^1.8.2",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
