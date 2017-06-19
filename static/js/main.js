@@ -1,4 +1,5 @@
-
+var dataUrl = 'dataUrl';
+var authUrl = 'your_auth_Url';
 $(document).ready(function(){
     
 $("#feat").click(function() {
@@ -26,7 +27,7 @@ $("#conta").click(function() {
         else{
             $("#subm").text("Send");
         $.ajax({
-            url: "https://data.project.sanattaori.me/api/1/table/contact/insert",
+            url: dataUrl+"/api/1/table/contact/insert",
                  contentType: 'application/json',
                 method: 'post',
                 dataType: 'json',
