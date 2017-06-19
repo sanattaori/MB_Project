@@ -67,7 +67,7 @@ function tokenHeaders() {
   }
 
 $.ajax({
-	url: 'https://auth.project.sanattaori.me/user/account/info',
+	url: 'https://<auth_url>/user/account/info',
 	headers: tokenHeaders(),
 	method: 'GET'
 
@@ -102,7 +102,7 @@ else{
 
 
 	$.ajax({
-		url: 'https://data.project.sanattaori.me/v1/query',
+		url: 'https://<data_url>/v1/query',
 		method: 'POST',
 		headers: tokenHeaders(),
 		data: JSON.stringify({
@@ -131,7 +131,7 @@ else{
 $("#tabl").load(location.href + " #tabl");
 //on refresh load data
 $.ajax({
-	url: 'https://data.project.sanattaori.me/v1/query',
+	url: 'https://<data_url>/v1/query',
 	method: 'POST',
 	headers: tokenHeaders(),
 	data: JSON.stringify({
@@ -181,7 +181,7 @@ $('#date').val('')
 //fetch
 
 $.ajax({
-	url: 'https://data.project.sanattaori.me/v1/query',
+	url: 'https://<data_url>/v1/query',
 	method: 'POST',
 	headers: tokenHeaders(),
 	data: JSON.stringify({
@@ -212,7 +212,7 @@ $.ajax({
 
 	$(logout).click(function(){
 		$.ajax({
-			url: 'https://auth.project.sanattaori.me/user/logout',
+			url: 'https://<auth_url>/user/logout',
 			headers: tokenHeaders(),
 			method: 'GET'
 		}).done(function(){
