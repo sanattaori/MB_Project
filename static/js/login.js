@@ -1,4 +1,5 @@
-
+var authUrl = 'authUrl';
+var dataUrl = 'dataUrl';
 
 $(document).ready(function(){
 	 $("#showf").hide();
@@ -44,7 +45,7 @@ $("#one").hide();
 $("#signup").hide();
 
 	$.ajax({
-		url: "https://auth.project.sanattaori.me/signup",
+		url: authUrl+"/signup",
 		method: 'post',
 		headers: { 'Content-Type' : 'application/json' },
 		data: JSON.stringify({
@@ -95,7 +96,7 @@ $("#one").hide();
 $("#signup").hide();
 
 	$.ajax({
-		url: "https://auth.project.sanattaori.me/login",
+		url: authUrl+"/login",
 		method: 'post',
 		headers: { 'Content-Type' : 'application/json' },
 		data: JSON.stringify({
